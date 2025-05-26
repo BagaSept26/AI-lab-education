@@ -10,13 +10,12 @@ const router = createRouter({
       name: 'home',
       component: HomeView
     },
-    // Nanti kita tambahkan rute untuk fitur-fitur lain di sini
-    // Contoh:
-    // {
-    //   path: '/persona-chat',
-    //   name: 'personaChat',
-    //   component: () => import('../views/PersonaChatView.vue')
-    // }
+    // -- TAMBAHKAN RUTE INI --
+    {
+      path: '/persona-chat',
+      name: 'personaChat',
+      component: () => import('../views/PersonaChatView.vue')
+    }
   ]
 })
 
